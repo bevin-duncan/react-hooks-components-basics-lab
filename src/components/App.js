@@ -3,7 +3,8 @@ import React from "react";
 function NavBar() {
   return (
     <nav>
-      <a href="#home">I'm a link!</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
     </nav>
   );
 }
@@ -16,15 +17,22 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
+function About() {
+  return (
+    <div id="about">
+      <h1>About</h1>
+      <p>Hello, World! I'm Bevin!</p>
+    </div>
+  );
+}
 
 
 function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
